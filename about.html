@@ -228,11 +228,11 @@
             </h1>
             <div
               id="seniorTeam"
-              class="grid grid-cols-3 llg:px-[12rem] text-center"
+              class="grid grid-cols-3 text-center"
             ></div>
             <div
               id="juniorTeam"
-              class="grid grid-cols-3 lg:grid-cols-4 gap-4 pt-[4rem] text-center"
+              class="grid grid-cols-3 lg:grid-cols-4 gap-4 pt-[3rem] md:pt-[6rem] text-center"
             ></div>
           </div>
         </div>
@@ -264,13 +264,15 @@
     </section>
 
     <footer class="bg-[#f8f8fb]">
-      <div class="flex flex-col gap-14 p-6 lg:p-20 max-w-[1520px] mx-auto">
+      <div
+        class="flex flex-col gap-14 p-6 py-[3rem] lg:p-20 max-w-[1520px] mx-auto"
+      >
         <div
           class="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0 flex-wrap"
         >
           <div class="flex flex-col gap-4">
             <h1
-              class="uppercase text-sm lg:text-md text-[#1290CB] font-semibold"
+              class="uppercase text-md lg:text-lg text-[#1290CB] font-semibold"
             >
               about us
             </h1>
@@ -283,9 +285,7 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1
-              class="uppercase text-[#1290CB] text-sm lg:text-md font-semibold"
-            >
+            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
               our services
             </h1>
             <ul class="capitalize flex flex-col gap-2 text-sm">
@@ -302,9 +302,7 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1
-              class="uppercase text-[#1290CB] text-sm lg:text-md font-semibold"
-            >
+            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
               quick links
             </h1>
             <ul class="capitalize flex flex-col gap-2 text-sm">
@@ -321,9 +319,7 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1
-              class="uppercase text-[#1290CB] text-sm lg:text-md font-semibold"
-            >
+            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
               contact us
             </h1>
             <div class="flex flex-col gap-4 text-sm">
@@ -345,9 +341,7 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <h1
-              class="uppercase text-sm lg:text-md text-[#1290CB] font-semibold"
-            >
+            <h1 class="uppercase text-md lg:text-lg text-[#1290CB] font-semibold">
               Find Us Online
             </h1>
             <div class="flex items-center gap-6">
@@ -385,7 +379,7 @@
 
         <div class="flex items-center text-[10px]">
           <div class="text-center flex items-start items-center gap-2">
-            <img src="images/copyright.png" />
+            <i class="bi bi-c-circle text-[#1290CB] text-xl"></i>
             <span>
               Tech Champions Web & Mobile Solutions 2023. All Rights Reserved.
             </span>
@@ -404,19 +398,25 @@
         },
         {
           id: 2,
-          name: "joel kipupu ndudu",
-          position: "chief operations officer",
+          name: "joel kipupu nduhdu",
+          position: "chief operational officer",
           img: "images/coo.jpg",
         },
         {
           id: 3,
           name: "Jennnifer Akporero",
-          position: "human resource officer",
-          img: "images/hr.jpg",
+          position: "human resource manager",
+          img: "images/seniorHR.jpg",
         },
       ];
 
       const juniorTeamArray = [
+      {
+          id: 0,
+          name: "victoria unekawuojo idris",
+          position: "human resource officer",
+          img: "images/hr.jpg",
+        },
         {
           id: 1,
           name: "peace nwadike",
@@ -439,7 +439,7 @@
           id: 4,
           name: "eniola benson",
           position: "backend developer",
-          img: "images/backend.jpg",
+          img: "images/back.jpg",
         },
         {
           id: 5,
@@ -447,6 +447,7 @@
           position: "frontend developer",
           img: "images/frontend.jpg",
         },
+
         {
           id: 6,
           name: "isreal akinshola",
@@ -459,12 +460,12 @@
           position: "digital marketer",
           img: "images/marketing.jpg",
         },
-        {
-          id: 8,
-          name: "olubodun wonderful",
-          position: "business developer",
-          img: "images/.jpg",
-        },
+        // {
+        //   id: 8,
+        //   name: "olubodun wonderful",
+        //   position: "business developer",
+        //   img: "images/.jpg",
+        // },
       ];
 
       const seniorTeam = document.getElementById("seniorTeam");
