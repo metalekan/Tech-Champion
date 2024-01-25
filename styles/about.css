@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+img{
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@font-face{
+  font-family: "millik";
+  src: url(../fonts/grin-webfont.woff) format('woff');
+}
+
+h1{
+  font-family: 'millik', sans-serif;
+}
+
+h1 span{
+  font-family: 'millik', sans-serif;
+}
+
+.btn {
+  font-size: 17px;
+  padding: 15px 35px;
+  border-radius: 5px;
+  outline: 2px solid #1290CB;
+  outline-offset: 0px;
+  background: #1290CB;
+  border: 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  outline-offset: 3px;
+  outline: 3px solid #1290CB;
+}
+
+.btn2 {
+  font-size: 14px;
+  padding: 1em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: #1290CB;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+ }
+ 
+ .btn2:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .btn2:active {
+  transform: translate(0em, 0.2em);
+ }
+
+
+.menu li {
+  list-style: none;
+  font-family: inherit;
+  /* cursor: pointer; */
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.menu li a:focus,
+.menu li a:hover {
+  color: #1290cb;
+}
+
+.menu li:focus:after,
+.menu li:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.menu li:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #1290cb;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  /* background-color: #1290cb; */
+  /* background: linear-gradient(45deg,
+            rgb(183, 0, 255) 20%,
+            rgb(255, 0, 170) 100%); */
+  /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363); */
+  border-radius: 5px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+}
+
+.switch div {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  position: absolute;
+}
+
+.switch span {
+  background: #1290cb;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s, width 0.5s;
+}
+
+.switch .line-1 {
+  width: 50%;
+  transform: translate(-100%, -10px);
+  transform-origin: 0 0;
+}
+
+.switch .line-3 {
+  width: 50%;
+  left: auto;
+  right: 0;
+  transform: translate(0, 10px);
+  transform-origin: 100% 0;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url(../images/three-coworkers-looking-monitor.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+  color: #212121;
+}
+
