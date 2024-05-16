@@ -39,9 +39,9 @@
   </head>
 
   <body class="relative">
-    <header class="sticky top-0 z-10 shadow-lg glass z-20">
+    <header class="sticky top-0 z-10 shadow-lg glass z-20 navbar visible">
       <div
-        class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-2 lg:py-2 max-w-[1520px] mx-auto"
+        class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-2 lg:py-2 max-w-screen-xl mx-auto"
       >
         <div class="flex flex-row items-center justify-between w-full lg:w-fit">
           <a href="index.html" class="flex items-center font-bold">
@@ -89,12 +89,7 @@
             <li>
               <a href="our_works.html">Our Works</a>
             </li>
-            <a
-              href="contact.html"
-              class="btn"
-            >
-              start a project
-            </a>
+            <a href="contact.html" class="btn"> start a project </a>
           </ul>
           <ul
             id="mobile_menu"
@@ -121,15 +116,45 @@
     </header>
 
     <main>
-      <div>
+      <section class="bg-blue-300">
         <div
-          class="swiper h-[70svh] lg:h-[80svh]"
+          class="px-6 lg:px-20 pb-[6rem] max-w-screen-xl mx-auto min-h-screen flex flex-col items-center justify-center"
         >
+          <h1 class="text-2xl lg:text-4xl">Countdown Begins</h1>
+          <div id="timer" class=""></div>
+          <div class="flex items-start gap-4">
+            <div class="flex flex-col items-center">
+              <span class="text-4xl" id="days">00</span>
+              <span class="text-[10px]">DAYS</span>
+            </div>
+            <span class="text-4xl">:</span>
+            <div class="flex flex-col items-center">
+              <span class="text-4xl" id="hours">00</span>
+              <span class="text-[10px]">HOURS</span>
+            </div>
+            <span class="text-4xl">:</span>
+            <div class="flex flex-col items-center">
+              <span class="text-4xl" id="minutes">00</span>
+              <span class="text-[10px]">MINUTES</span>
+            </div>
+            <span class="text-4xl">:</span>
+            <div class="flex flex-col items-center">
+              <span class="text-4xl" id="seconds">00</span>
+              <span class="text-[10px]">SECONDS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="swiper h-[70svh] lg:h-[80svh]">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper relative">
             <!-- Slides -->
             <div class="swiper-slide swiper_slide_one flex items-center">
-              <div class="px-6 lg:px-20 mx-auto max-w-[1520px] flex flex-col gap-10 animate__animated animate__fadeInLeft">
+              <div
+                class="px-6 lg:px-20 mx-auto max-w-screen-xl flex flex-col gap-10 animate__animated animate__fadeInLeft"
+              >
                 <h1
                   class="text-3xl lg:text-5xl text-white font-bold drop-shadow-lg uppercase leading-snug lg:w-[50%]"
                 >
@@ -168,7 +193,9 @@
               </div>
             </div>
             <div class="swiper-slide swiper_slide_two flex items-center">
-              <div class="px-6 lg:px-20 mx-auto max-w-[1520px] flex flex-col gap-10 animate__animated animate__fadeInLeft">
+              <div
+                class="px-6 lg:px-20 mx-auto max-w-screen-xl flex flex-col gap-10 animate__animated animate__fadeInLeft"
+              >
                 <h1
                   class="text-3xl lg:text-5xl text-white font-bold drop-shadow-lg uppercase leading-snug lg:w-[50%]"
                 >
@@ -207,7 +234,9 @@
               </div>
             </div>
             <div class="swiper-slide swiper_slide_three flex items-center">
-              <div class="px-6 lg:px-20 mx-auto max-w-[1520px] flex flex-col gap-10 animate__animated animate__fadeInLeft">
+              <div
+                class="px-6 lg:px-20 mx-auto max-w-screen-xl flex flex-col gap-10 animate__animated animate__fadeInLeft"
+              >
                 <h1
                   class="text-3xl lg:text-5xl text-white font-bold drop-shadow-lg uppercase leading-snug lg:w-[50%]"
                 >
@@ -246,7 +275,9 @@
               </div>
             </div>
             <div class="swiper-slide swiper_slide_four flex items-center">
-              <div class="px-6 lg:px-20 mx-auto max-w-[1520px] flex flex-col gap-10 animate__animated animate__fadeInLeft">
+              <div
+                class="px-6 lg:px-20 mx-auto max-w-screen-xl flex flex-col gap-10 animate__animated animate__fadeInLeft"
+              >
                 <h1
                   class="text-3xl lg:text-5xl text-white font-bold drop-shadow-lg uppercase leading-snug lg:w-[50%]"
                 >
@@ -297,8 +328,12 @@
           <div class="swiper-scrollbar"></div>
         </div>
 
-        <div class="flex items-center max-w-[1080px] mx-auto py-[2rem] lg:py-[4rem]">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 animate__animated animate__fadeInRight">
+        <div
+          class="flex items-center max-w-[1080px] mx-auto py-[2rem] lg:py-[4rem]"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 gap-4 animate__animated animate__fadeInRight"
+          >
             <div class="flex flex-col gap-4 items-center p-5 h-full">
               <img
                 class="w-[80px] lg:w-[120px]"
@@ -309,7 +344,9 @@
                 class="font-bold text-md lg:text-lg border-b-4 border-[#FF6697]"
                 >OUR VISION</span
               >
-              <p class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full">
+              <p
+                class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full"
+              >
                 Become One of the Top Ten Enterprise and Digital Solution
                 Provider to at least 1000 Businesses Across Nigeria by the Year
                 2030
@@ -328,7 +365,9 @@
                 class="font-bold text-md lg:text-lg border-b-4 border-[#FF6697]"
                 >WHO WE ARE</span
               >
-              <p class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full">
+              <p
+                class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full"
+              >
                 We are one of the leading providers of enterprise and digital
                 solutions to various business across the world. We create
                 Personalized Enterprise Web and Mobile Applications that
@@ -348,7 +387,9 @@
                 class="font-bold text-md lg:text-lg border-b-4 border-[#FF6697]"
                 >OUR MISSION</span
               >
-              <p class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full">
+              <p
+                class="text-sm lg:text-base text-center h-[40%] w-[70%] lg:w-full"
+              >
                 Creating Personalized Enterprise Web and Mobile Applications
                 that transforms business processes into digital systems.
               </p>
@@ -360,7 +401,7 @@
         </div>
 
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 lg:px-20 py-[4rem] max-w-[1520px] mx-auto"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 lg:px-20 py-[4rem] max-w-screen-xl mx-auto"
         >
           <div class="lg:w-[80%] flex flex-col gap-10 text-black ppy-[4rem]">
             <div class="flex flex-col gap-3">
@@ -424,403 +465,491 @@
             </a>
           </div>
           <div class="rounded-3xl h-full p-2">
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" class="h-full object-cover rounded-2xl object-center">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="hero"
+              class="h-full object-cover rounded-2xl object-center"
+            />
           </div>
         </div>
-      </div>
-    </main>
+      </section>
 
-    <section>
-      <div class="px-6 lg:px-20 pb-[6rem] max-w-[1520px] mx-auto">
-        <h1
-          class="text-2xl lg:text-4xl text-center py-[3rem] lg:py-[4rem] font-bold uppercase"
+      <section class="bg-white">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
         >
-          our <span class="text-[#fca311]">services</span>
-        </h1>
-        <div class="grid lg:grid-cols-3 gap-5">
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl glass"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 10.png"
-              alt="image_10"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              WEB DEVELOPMENT
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              Our team of highly experienced designers can create mouth watering
-              and high quality graphics designs. We design custom posters,
-              Electronic Adverts,Business Logos, Fliers, Banners, Business Cards
-              etc. Contact us today for your Graphics Design Project
+          <img class="w-full" src="images/graphics.png" alt="loading" />
+          <div class="mt-10 md:mt-0">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Transformative
+              <span class="text-[#fc8400]">Training Program</span> on Digital
+              Skills and Advancement
+            </h2>
+            <p class="mb-6 font-normal text-gray-500 md:text-lg">
+              Are you ready to level up your tech game and become a true Tech
+              Champion? Join us at Tech Champions for an immersive and
+              comprehensive training experience that will elevate your skills to
+              new heights! Tech Champions is proud to present our cutting-edge
+              training program designed for tech enthusiasts like you.
             </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
-            </a>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 15.png"
-              alt="image_15"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              MOBILE APPLICATION DEVELOPMENT
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              Businesses get more results and user interactions on a mobile app
-              compared to a traditional website. Get Closer to your clients,
-              Understand their Interactions, Needs and Demands via a mobile app.
-              Contact us today for your mobile app projects. We build stunning
-              Mobile Apps for both Android and IOS Platforms.
-            </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
-            </a>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 12.png"
-              alt="image_12"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              DIGITAL MARKETING
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              It doesn't stop with having a website. The world need to know
-              about your website before they can visit it. We offer various
-              digital marketing strategies such as Google Search Engine
-              Optimization (SEO), Google Analytics, Facebook Marketing, Email
-              Marketing etc. that can increase your online presence.
-            </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
-            </a>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 13.png"
-              alt="image_9"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              CORPORATE BRANDING
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              We create a unique and distinct identity for your organization.
-              With our team of professionals, we help your organization build
-              recognition and reputation. Contact us for your branding project
-              today.
-            </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
-            </a>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 11.png"
-              alt="image_9"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              PROFESSIONAL VIDEO EDITING
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              We produce high quality campaign videos for the digital marketing
-              of your products and services. Our video editing services include
-              Business Video Adverts, Product Simulations, Video Montage,
-              Animations etc.
-            </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
-            </a>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
-          >
-            <img
-              class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
-              src="images/image 9.png"
-              alt="image_9"
-            />
-            <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
-              GRAPHICS DESIGN
-            </h1>
-            <p class="text-sm lg:h-[35%]">
-              Our team of highly experienced designers can create mouth watering
-              and high quality graphics designs. We design custom posters,
-              Electronic Adverts,Business Logos, Fliers, Banners, Business Cards
-              etc. Contact us today for your Graphics Design Project
-            </p>
-            <a href="contact.html">
-              <button class="btn2">get started</button>
+            <ul class="flex flex-col gap-3 mb-8 font-medium text-gray-500">
+              <li>Training Starts: May 6 2024</li>
+              <li>Application Closes: May 2 2024</li>
+            </ul>
+            <a href="training.html" class="button">
+              <span>Register Now</span>
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 74 74"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="37"
+                  cy="37"
+                  r="35.5"
+                  stroke="white"
+                  stroke-width="3"
+                ></circle>
+                <path
+                  d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                  fill="white"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
-      </div>
-      <button id="scrollToTopBtn" class="top shadow-xl fixed bottom-10 right-5 z-10 hidden">
-        ↑
-      </button>
-    </section>
+      </section>
 
-    <section>
-      <div
-        class="flex flex-col justify-center max-w-[1520px] mx-auto pb-[6rem] px-6 lg:px-20"
-      >
-        <h1
-          class="capitalize text-2xl lg:text-4xl text-center py-[3rem] lg:py-[6rem] font-bold"
-        >
-          <span class="text-[#fca311]">we are</span> helping
-          <span class="text-[#fca311]">bus</span>inesses like yours
-        </h1>
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:px-20">
-          <div class="flex items-center justify-center basis-1/2">
-            <img class="object-cover" src="images/hawkit.jpg" alt="hawkit" />
+      <section>
+        <div class="px-6 lg:px-20 pb-[6rem] max-w-screen-xl mx-auto">
+          <h1
+            class="text-2xl lg:text-4xl text-center py-[3rem] lg:py-[4rem] font-bold uppercase"
+          >
+            our <span class="text-[#fca311]">services</span>
+          </h1>
+          <div class="grid lg:grid-cols-3 gap-5">
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl glass"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 10.png"
+                alt="image_10"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                WEB DEVELOPMENT
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                Our team of highly experienced designers can create mouth
+                watering and high quality graphics designs. We design custom
+                posters, Electronic Adverts,Business Logos, Fliers, Banners,
+                Business Cards etc. Contact us today for your Graphics Design
+                Project
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 15.png"
+                alt="image_15"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                MOBILE APPLICATION DEVELOPMENT
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                Businesses get more results and user interactions on a mobile
+                app compared to a traditional website. Get Closer to your
+                clients, Understand their Interactions, Needs and Demands via a
+                mobile app. Contact us today for your mobile app projects. We
+                build stunning Mobile Apps for both Android and IOS Platforms.
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 12.png"
+                alt="image_12"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                DIGITAL MARKETING
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                It doesn't stop with having a website. The world need to know
+                about your website before they can visit it. We offer various
+                digital marketing strategies such as Google Search Engine
+                Optimization (SEO), Google Analytics, Facebook Marketing, Email
+                Marketing etc. that can increase your online presence.
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 13.png"
+                alt="image_9"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                CORPORATE BRANDING
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                We create a unique and distinct identity for your organization.
+                With our team of professionals, we help your organization build
+                recognition and reputation. Contact us for your branding project
+                today.
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 11.png"
+                alt="image_9"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                PROFESSIONAL VIDEO EDITING
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                We produce high quality campaign videos for the digital
+                marketing of your products and services. Our video editing
+                services include Business Video Adverts, Product Simulations,
+                Video Montage, Animations etc.
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center text-center gap-3 px-4 glass py-8 rounded-2xl"
+            >
+              <img
+                class="w-5xl h-5xl lg:w-[80px] lg:h-[80px]"
+                src="images/image 9.png"
+                alt="image_9"
+              />
+              <h1 class="font-semibold text-[#1290CB] text-md lg:text-xl">
+                GRAPHICS DESIGN
+              </h1>
+              <p class="text-sm lg:h-[35%]">
+                Our team of highly experienced designers can create mouth
+                watering and high quality graphics designs. We design custom
+                posters, Electronic Adverts,Business Logos, Fliers, Banners,
+                Business Cards etc. Contact us today for your Graphics Design
+                Project
+              </p>
+              <a href="contact.html">
+                <button class="btn2">get started</button>
+              </a>
+            </div>
           </div>
-          <div class="flex flex-col gap-6 lg:basis-1/2 text-base">
-            <h2 class="text-lg md:text-xl font-bold -mb-1 text-[#fca311]">
-              Our Recent Works
-            </h2>
-            <h2 class="text-xl md:text-2xl font-bold">
-              Web Application Development Of An Online Marketplace - Hawkit
-            </h2>
-            <p class="teaxt-sm md:text-base leading-snug">
-              With Hawkit, you can easily advertise your products and services and also earn daily income by reposting adverts on your social media accounts
-            </p>
-            <h2 class="text-xl md:text-2xl font-bold">What We Did</h2>
-            <ul class="text-sm md:text-base li">
-              <li>World Class & Fully Responsive Designs</li>
+        </div>
+        <button
+          id="scrollToTopBtn"
+          class="top shadow-xl fixed bottom-10 right-5 z-10 hidden"
+        >
+          ↑
+        </button>
+      </section>
+
+      <section>
+        <div
+          class="flex flex-col justify-center max-w-screen-xl mx-auto pb-[6rem] px-6 lg:px-20"
+        >
+          <h1
+            class="capitalize text-2xl lg:text-4xl text-center py-[3rem] lg:py-[6rem] font-bold"
+          >
+            <span class="text-[#fca311]">we are</span> helping
+            <span class="text-[#fca311]">bus</span>inesses like yours
+          </h1>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:px-20"
+          >
+            <div class="flex items-center justify-center basis-1/2">
+              <img class="object-cover" src="images/hawkit.jpg" alt="hawkit" />
+            </div>
+            <div class="flex flex-col gap-6 lg:basis-1/2 text-base">
+              <h2 class="text-lg md:text-xl font-bold -mb-1 text-[#fca311]">
+                Our Recent Works
+              </h2>
+              <h2 class="text-xl md:text-2xl font-bold">
+                Web Application Development Of An Online Marketplace - Hawkit
+              </h2>
+              <p class="teaxt-sm md:text-base leading-snug">
+                With Hawkit, you can easily advertise your products and services
+                and also earn daily income by reposting adverts on your social
+                media accounts
+              </p>
+              <h2 class="text-xl md:text-2xl font-bold">What We Did</h2>
+              <ul class="text-sm md:text-base li">
+                <li>World Class & Fully Responsive Designs</li>
                 <li>Online Mastercard/VISA Payment Integration</li>
                 <li>Epin Generation Systems for Activation of Members</li>
-                <li>Members of Hawkit can earn daily income with their social media accounts</li>
-                <li>Implementation of a social media algorithm that allows you to go viral on social media 
-                    platforms like Facebook, Whatsapp, Instagram, Tiktok</li>
-                <li>Beautiful & Attractive Back Office for every member to monitor their genealogy, fund 
-                    transfers, place withdrawals, register members and monitor account progress</li>
+                <li>
+                  Members of Hawkit can earn daily income with their social
+                  media accounts
+                </li>
+                <li>
+                  Implementation of a social media algorithm that allows you to
+                  go viral on social media platforms like Facebook, Whatsapp,
+                  Instagram, Tiktok
+                </li>
+                <li>
+                  Beautiful & Attractive Back Office for every member to monitor
+                  their genealogy, fund transfers, place withdrawals, register
+                  members and monitor account progress
+                </li>
                 <li>Online Shopping Platform Design</li>
                 <li>Multiple Admin Processing System Integration</li>
                 <li>Social Media Integration</li>
                 <li>Google Search Engine Optimization</li>
-            </ul>
-            <div class="flex items-center gap-3">
-              <a class="btn2" target="_blank" href="https://hawkit.ng"
-                >VISIT WEBSITE</a
-              >
-              <a class="btn2" href="our_works.html">OUR WORKS</a>
+              </ul>
+              <div class="flex items-center gap-3">
+                <a class="btn2" target="_blank" href="https://hawkit.ng"
+                  >VISIT WEBSITE</a
+                >
+                <a class="btn2" href="our_works.html">OUR WORKS</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="bg-[#1290CB]">
-      <div
-        class="flex flex-col items-center gap-2 px-6 lg:px-20 pt-[4rem] max-w-[1520px] mx-auto text-white"
-      >
-        <h1 class="text-2xl lg:text-4xl font-bold ttext-[#fc8400]">TESTIMONIALS</h1>
-        <span class="text-md lg:text-lg font-medium">See what people are saying about us</span>
-      </div>
-      <div class="swiper animate__animated animate__zoomIn text-center max-w-[1520px] pb-[2rem] mx-auto">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-white">
-          <!-- Slides -->
-          <div class="swiper-slide swiper_slide_on flex justify-center">
-            <div
-              class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
-            >
-              <img
-                class="w-[70px] lg:w-[100px] rounded-full"
-                src="images/success_speaks.jpg.png"
-                alt="success_speaks"
-              />
-              <div>
-                <p class="text-xl text-[#212121] font-bold font-medium mb-1">Success Haruna</p>
-                <span class="text-lg">CEO, Success Speaks International</span>
-              </div>
-              <span class="text-center lg:w-[50%] text-base md:text-lg"
-                ><span class="font-bold text-2xl">“</span> There are many web
-                design companies out there but none of them can deliver what
-                Tech Champions can deliver. They are very unique in their
-                approach to Web Design and are very passionate about what they
-                do. I will always choose them anytime, any day.<span
-                  class="font-bold text-xl"
-                  >”</span
-                >
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper_slide_tw flex justify-center">
-            <div
-              class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
-            >
-              <img
-                class="w-[70px] lg:w-[100px] rounded-full"
-                src="images/xtralarge.jpg"
-                alt="xtralarge"
-              />
-              <div>
-                <p class="text-xl text-[#212121] font-bold font-medium mb-1">Moji Davids</p>
-                <span class="text-lg">Marketing Director, XtraLarge Farms</span>
-              </div>
-              <span class="text-center lg:w-[50%] text-base md:text-lg"
-                ><span class="font-bold text-2xl">“</span> Tech Champions Web & Mobile Solutions have been in charge of our website for the past two years. The delivered a wonderful and secured web platform for the Multi-Level Marketing of our Products<span
-                  class="font-bold text-xl"
-                  >”</span
-                >
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper_slide_thre flex justify-center">
-            <div
-              class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
-            >
-              <img
-                class="w-[70px] lg:w-[100px] rounded-full"
-                src="images/futuris_ceo.jpg"
-                alt="futuris_ceo"
-              />
-              <div>
-                <p class="text-xl text-[#212121] font-bold font-medium mb-1">Poppola Oluwaseun</p>
-                <span class="text-lg">CEO, Futuris Farms</span>
-              </div>
-              <span class="text-center lg:w-[50%] text-base md:text-lg"
-                ><span class="font-bold text-2xl">“</span>  Tech Champions Web & Mobile Solutions delivered a beautiful and mind blowing design of our website. I am very impressed with their level of Professionalism and Timing. We will always love working with them. Thumbs up guys.<span
-                  class="font-bold text-xl"
-                  >”</span
-                >
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination">
-              <i class="bi bi-dot"></i>
-            </div> -->
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
-      </div>
-    </section>
-
-    <section>
-      <div class="p-6 lg:p-20 max-w-[1520px] mx-auto">
-        <h1
-          class="capitalize text-2xl lg:text-4xl text-center py-[4rem] font-bold"
+      <section class="bg-[#1290CB]">
+        <div
+          class="flex flex-col items-center gap-2 px-6 lg:px-20 pt-[4rem] max-w-screen-xl mx-auto text-white"
         >
-          our <span class="text-[#fca311]">latest blog</span> posts
-        </h1>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8 pb-[6rem]">
-          <div
-            class="flex flex-col items-center gap-4 min-h-[300px] text-center"
+          <h1 class="text-2xl lg:text-4xl font-bold ttext-[#fc8400]">
+            TESTIMONIALS
+          </h1>
+          <span class="text-md lg:text-lg font-medium"
+            >See what people are saying about us</span
           >
-            <img
-              class="w-[80%] lg:w-[50%]"
-              src="images/11a5ca78e104f2fc81c71722a77c35ff.jpg.png"
-              alt="blog_1"
-            />
-            <div class="flex flex-col gap-2 px-[2rem]">
-              <h2 class="capitalize font-bold text-md lg:text-lg text-center">
-                5 smart ways to get your clients to pay your rates
-              </h2>
-              <p class="text-sm lg:text-base">
-                If you’re a freelancer, you are probably getting paid much less
-                than you’re worth for the following reasons.
-              </p>
-            </div>
-            <a href="our_works.html" class="btn2">OUR WORKS</a>
-          </div>
-          <div
-            class="flex flex-col items-center gap-4 min-h-[300px] text-center"
-          >
-            <img
-              class="w-[80%] lg:w-[50%]"
-              src="images/0666fb318cb081b9c0069a3ee918a0bf.jpg.png"
-              alt="blog_2"
-            />
-            <div class="flex flex-col">
-              <h2 class="capitalize font-bold text-md lg:text-lg text-center">
-                how to make money with an affliate program?
-              </h2>
-              <p class="text-sm lg:text-base">
-                It’s 2019 and the world obviously knows about affiliate
-                programs, it has become one of the familiar terms in marketing
-                history. So, can you call this an opportunity or the best way to
-                make money?
-              </p>
-            </div>
-            <a href="our_works.html" class="btn2">OUR WORKS</a>
-          </div>
-          <div
-            class="flex flex-col items-center gap-4 min-h-[300px] text-center"
-          >
-            <img
-              class="w-[80%] lg:w-[50%]"
-              src="images/a2dd369e7a406de4db9bae3984afe7c5.jpg.png"
-              alt="blog_3"
-            />
-            <div class="flex flex-col">
-              <h2 class="capitalize font-bold text-md lg:text-lg text-center">
-                How to start your own MLM business. guideline to follow
-              </h2>
-              <p class="text-sm lg:text-base">
-                Obviously, you have come up with a decision of starting an MLM
-                business. You’re here because you're stuck at the initial point
-                itself and searching for further movement.
-              </p>
-            </div>
-            <a href="our_works.html" class="btn2">OUR WORKS</a>
-          </div>
         </div>
-      </div>
-    </section>
-    
+        <div
+          class="swiper animate__animated animate__zoomIn text-center max-w-screen-xl pb-[2rem] mx-auto"
+        >
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper text-white">
+            <!-- Slides -->
+            <div class="swiper-slide swiper_slide_on flex justify-center">
+              <div
+                class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
+              >
+                <img
+                  class="w-[70px] lg:w-[100px] rounded-full"
+                  src="images/success_speaks.jpg.png"
+                  alt="success_speaks"
+                />
+                <div>
+                  <p class="text-xl text-[#212121] font-bold font-medium mb-1">
+                    Success Haruna
+                  </p>
+                  <span class="text-lg">CEO, Success Speaks International</span>
+                </div>
+                <span class="text-center lg:w-[50%] text-base md:text-lg"
+                  ><span class="font-bold text-2xl">“</span> There are many web
+                  design companies out there but none of them can deliver what
+                  Tech Champions can deliver. They are very unique in their
+                  approach to Web Design and are very passionate about what they
+                  do. I will always choose them anytime, any day.<span
+                    class="font-bold text-xl"
+                    >”</span
+                  >
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper_slide_tw flex justify-center">
+              <div
+                class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
+              >
+                <img
+                  class="w-[70px] lg:w-[100px] rounded-full"
+                  src="images/xtralarge.jpg"
+                  alt="xtralarge"
+                />
+                <div>
+                  <p class="text-xl text-[#212121] font-bold font-medium mb-1">
+                    Moji Davids
+                  </p>
+                  <span class="text-lg"
+                    >Marketing Director, XtraLarge Farms</span
+                  >
+                </div>
+                <span class="text-center lg:w-[50%] text-base md:text-lg"
+                  ><span class="font-bold text-2xl">“</span> Tech Champions Web
+                  & Mobile Solutions have been in charge of our website for the
+                  past two years. The delivered a wonderful and secured web
+                  platform for the Multi-Level Marketing of our Products<span
+                    class="font-bold text-xl"
+                    >”</span
+                  >
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper_slide_thre flex justify-center">
+              <div
+                class="flex flex-col items-center justify-center text-center text-sm gap-3 p-4"
+              >
+                <img
+                  class="w-[70px] lg:w-[100px] rounded-full"
+                  src="images/futuris_ceo.jpg"
+                  alt="futuris_ceo"
+                />
+                <div>
+                  <p class="text-xl text-[#212121] font-bold font-medium mb-1">
+                    Poppola Oluwaseun
+                  </p>
+                  <span class="text-lg">CEO, Futuris Farms</span>
+                </div>
+                <span class="text-center lg:w-[50%] text-base md:text-lg"
+                  ><span class="font-bold text-2xl">“</span> Tech Champions Web
+                  & Mobile Solutions delivered a beautiful and mind blowing
+                  design of our website. I am very impressed with their level of
+                  Professionalism and Timing. We will always love working with
+                  them. Thumbs up guys.<span class="font-bold text-xl">”</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination">
+                <i class="bi bi-dot"></i>
+              </div> -->
 
-    <section class="bg-white">
-      <div
-        class="flex flex-col p-6 lg:p-20 pb-[6rem] text-[#1290CB] max-w-[1520px] mx-auto"
-      >
-        <div class="flex flex-col items-center gap-3">
-          <img
-            class="w-[120px] lg:w-[150px]"
-            src="images/link_logo.png"
-            alt=""
-          />
-          <div class="flex flex-col text-center pb-5 font-semibold">
-            <span class="lg:text-2xl">TECH CHAMPIONS</span>
-            <span class="lg:text-xl">WEB & MOBILE SOLUTIONS</span>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </section>
+
+      <section>
+        <div class="p-6 lg:p-20 max-w-screen-xl mx-auto">
+          <h1
+            class="capitalize text-2xl lg:text-4xl text-center py-[4rem] font-bold"
+          >
+            our <span class="text-[#fca311]">latest blog</span> posts
+          </h1>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8 pb-[6rem]"
+          >
+            <div
+              class="flex flex-col items-center gap-4 min-h-[300px] text-center"
+            >
+              <img
+                class="w-[80%] lg:w-[50%]"
+                src="images/11a5ca78e104f2fc81c71722a77c35ff.jpg.png"
+                alt="blog_1"
+              />
+              <div class="flex flex-col gap-2 px-[2rem]">
+                <h2 class="capitalize font-bold text-md lg:text-lg text-center">
+                  5 smart ways to get your clients to pay your rates
+                </h2>
+                <p class="text-sm lg:text-base">
+                  If you’re a freelancer, you are probably getting paid much
+                  less than you’re worth for the following reasons.
+                </p>
+              </div>
+              <a href="our_works.html" class="btn2">OUR WORKS</a>
+            </div>
+            <div
+              class="flex flex-col items-center gap-4 min-h-[300px] text-center"
+            >
+              <img
+                class="w-[80%] lg:w-[50%]"
+                src="images/0666fb318cb081b9c0069a3ee918a0bf.jpg.png"
+                alt="blog_2"
+              />
+              <div class="flex flex-col">
+                <h2 class="capitalize font-bold text-md lg:text-lg text-center">
+                  how to make money with an affliate program?
+                </h2>
+                <p class="text-sm lg:text-base">
+                  It’s 2019 and the world obviously knows about affiliate
+                  programs, it has become one of the familiar terms in marketing
+                  history. So, can you call this an opportunity or the best way
+                  to make money?
+                </p>
+              </div>
+              <a href="our_works.html" class="btn2">OUR WORKS</a>
+            </div>
+            <div
+              class="flex flex-col items-center gap-4 min-h-[300px] text-center"
+            >
+              <img
+                class="w-[80%] lg:w-[50%]"
+                src="images/a2dd369e7a406de4db9bae3984afe7c5.jpg.png"
+                alt="blog_3"
+              />
+              <div class="flex flex-col">
+                <h2 class="capitalize font-bold text-md lg:text-lg text-center">
+                  How to start your own MLM business. guideline to follow
+                </h2>
+                <p class="text-sm lg:text-base">
+                  Obviously, you have come up with a decision of starting an MLM
+                  business. You’re here because you're stuck at the initial
+                  point itself and searching for further movement.
+                </p>
+              </div>
+              <a href="our_works.html" class="btn2">OUR WORKS</a>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col gap-4 items-center justify-between h-full">
-          <p class="text-sm font-medium text-center">
-            What are you waiting for? Contact Us today and let us take your
-            business to the level
-          </p>
-          <a
-            href="contact.html"
-            class="btn font-semibold"
-          >
-            start a project
-          </a>
+      </section>
+
+      <section class="bg-white">
+        <div
+          class="flex flex-col p-6 lg:p-20 pb-[6rem] text-[#1290CB] max-w-screen-xl mx-auto"
+        >
+          <div class="flex flex-col items-center gap-3">
+            <img
+              class="w-[120px] lg:w-[150px]"
+              src="images/link_logo.png"
+              alt=""
+            />
+            <div class="flex flex-col text-center pb-5 font-semibold">
+              <span class="lg:text-2xl">TECH CHAMPIONS</span>
+              <span class="lg:text-xl">WEB & MOBILE SOLUTIONS</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-between h-full">
+            <p class="text-sm font-medium text-center">
+              What are you waiting for? Contact Us today and let us take your
+              business to the level
+            </p>
+            <a href="contact.html" class="btn font-semibold">
+              start a project
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="bg-[#f8f8fb]">
       <div
-        class="flex flex-col gap-14 p-6 py-[3rem] lg:p-20 max-w-[1520px] mx-auto"
+        class="flex flex-col gap-14 p-6 py-[3rem] lg:p-20 max-w-screen-xl mx-auto"
       >
         <div
           class="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0 flex-wrap"
@@ -840,7 +969,9 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
+            <h1
+              class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold"
+            >
               our services
             </h1>
             <ul class="capitalize flex flex-col gap-2 text-sm">
@@ -857,7 +988,9 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
+            <h1
+              class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold"
+            >
               quick links
             </h1>
             <ul class="capitalize flex flex-col gap-2 text-sm">
@@ -874,7 +1007,9 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold">
+            <h1
+              class="uppercase text-[#1290CB] text-md lg:text-xl font-semibold"
+            >
               contact us
             </h1>
             <div class="flex flex-col gap-4 text-sm">
@@ -896,7 +1031,9 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <h1 class="uppercase text-md lg:text-lg text-[#1290CB] font-semibold">
+            <h1
+              class="uppercase text-md lg:text-lg text-[#1290CB] font-semibold"
+            >
               Find Us Online
             </h1>
             <div class="flex items-center gap-6">
@@ -944,28 +1081,52 @@
     </footer>
 
     <script>
-        // Get the button
-        var scrollToTopButton = document.getElementById("scrollToTopBtn");
+      // Get the button
+      var scrollToTopButton = document.getElementById("scrollToTopBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction();
-        };
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopButton.classList.remove("hidden");
-            } else {
-                scrollToTopButton.classList.add("hidden");
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopButton.classList.remove("hidden");
+        } else {
+          scrollToTopButton.classList.add("hidden");
         }
+      }
 
-        // Scroll to the top of the document when the button is clicked
-        function scrollToTop() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-        scrollToTopButton.addEventListener("click", scrollToTop)
+      // Scroll to the top of the document when the button is clicked
+      function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+      
+      scrollToTopButton.addEventListener("click", scrollToTop);
+
+      const navbar = document.querySelector(".navbar");
+      let lastScrollTop = 0;
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          console.log("scroll");
+          var { scrollY } = window;
+          if (scrollY > lastScrollTop) {
+            // downward scroll
+            navbar.classList.remove("visible");
+          } else if (scrollY < lastScrollTop) {
+            // upward scroll
+            navbar.classList.add("visible");
+          }
+          lastScrollTop = scrollY <= 0 ? 0 : scrollY;
+        },
+        { passive: true }
+      );
 
       const swiper = new Swiper(".swiper", {
         // Optional parameters

@@ -13,6 +13,20 @@ body {
   scroll-snap-type: smooth;
 }
 
+/* header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  translate: 0 -72px;
+  transition: 0.3s;
+}
+
+header .visible {
+  top: 0;
+  translate: 0;
+} */
+
 img {
   max-width: 100%;
   object-fit: contain;
