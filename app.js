@@ -6,6 +6,8 @@ const newhours = document.getElementById("hours");
 const newminutes = document.getElementById("minutes");
 const newseconds = document.getElementById("seconds");
 
+const countdown = document.getElementById("countdown");
+
 function toggleMenu() {
   if (menu.classList.contains("flex")) {
   } else {
@@ -15,48 +17,33 @@ function toggleMenu() {
 
 toggleButton.addEventListener("click", toggleMenu);
 
-function startCountdown(duration) {
-  const countdownElement = document.getElementById("timer");
-  let endTime = localStorage.getItem("countdownEndTime");
+// Function to update the countdown
+const targetDate = new Date("May 17, 2024 13:16:00").getTime();
 
-  if (!endTime) {
-    endTime = Date.now() + duration;
-    localStorage.setItem("countdownEndTime", endTime);
-  } else {
-    endTime = parseInt(endTime, 10);
+function updateCountdown() {
+  const now = new Date().getTime();
+  console.log(now);
+  const distance = targetDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  newdays.innerText = days;
+  newhours.innerText = hours;
+  newminutes.innerText = minutes;
+  newseconds.innerText = seconds;
+
+  // If the countdown is over, display some text
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    countdown.classList.add("hidden");
   }
-
-  function updateCountdown() {
-    const now = Date.now();
-    const timeLeft = endTime - now;
-
-    if (timeLeft <= 0) {
-      countdownElement.innerHTML = "Countdown finished!";
-      clearInterval(interval);
-      localStorage.removeItem("countdownEndTime");
-      return;
-    }
-
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-    newdays.innerText = days;
-    newhours.innerText = hours;
-    newminutes.innerText = minutes;
-    newseconds.innerText = seconds;
-
-  }
-
-  const interval = setInterval(updateCountdown, 1000);
-  updateCountdown(); // Initial call to display the countdown immediately
 }
 
-// 30 days in milliseconds
-const forTwoDays = 2 * 24 * 60 * 60 * 1000; //change the day to update 
-
-// Start the countdown
-startCountdown(forTwoDays);
+// Update the countdown every 1 second
+const countdownInterval = setInterval(updateCountdown, 1000);
